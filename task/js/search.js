@@ -35,7 +35,7 @@ function searchXML(xml)
                 for (i=0;i<x.length;i++)
                 {
                     id = xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-                    startString = id.substring(0,size);
+                    startString = id//.substring(0,size);
                   
                     if (startString.toLowerCase() == input.toLowerCase())
                     

@@ -32,18 +32,15 @@
         <phone>5496487214</phone>
     </employee>
     <employee>
-        <id>11</id>
+        <id>1</id>
+        <firstname>DupID</firstname>
+        <lastname>DupID</lastname>
+        <phone>0954871621</phone>
+    </employee>
+    <employee>
+        <id>13</id>
         <firstname>Jack</firstname>
         <lastname>Eye</lastname>
         <phone>1231235121</phone>
     </employee>
-    <employee>
-        <id>1</id>
-        <firstname>as</firstname>
-        <lastname>Sparrow</lastname>
-        <phone>0954871621</phone>
-    </employee>
-
-    
-
 </employees>
