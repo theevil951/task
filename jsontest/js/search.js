@@ -22,8 +22,8 @@ function searchJSON(json) {
                 emps.employees.employee[i].lastname +
                 emps.employees.employee[i].phone
             search = search.toLowerCase();
+            
             if (search.includes(input.toLowerCase())) {
-
                 table += "<tr><td>" +
                     emps.employees.employee[i].id + "</td><td>" +
                     emps.employees.employee[i].firstname + "</td><td>" +

@@ -7,18 +7,14 @@ function inputData(json) {
         inputLN = document.getElementById("lastName").value;
         inputPN = document.getElementById("phoneNumber").value;
 
-        if (inputID == "" || undefined) {
-
+        if (inputID == "" || inputID == undefined || isNaN(inputID)) {
             return;
         }
-
-
-
-        console.log(json); // this will show the info it in firebug console
-        console.log(json.employees.employee.length)
+        //console.log(json);
+        //console.log(json.employees.employee.length)
 
         emps = JSON.parse(localStorage.getItem("employees"));
-        console.log(emps); // this will show the info it in firebug console
+        console.log(emps);
 
         newEmployee = { id: inputID, firstname: inputFN, lastname: inputLN, phone: inputPN }
 
@@ -31,12 +27,12 @@ function inputData(json) {
         console.log(emps)
 
 
-        jsonString = JSON.stringify(json);
+        
 
 
         emps.employees.employee[length] = newEmployee;
 
-        console.log(emps.employees.employee[length])
+        //console.log(emps.employees.employee[length])
 
         localStorage.setItem("employees", JSON.stringify(emps))
 
