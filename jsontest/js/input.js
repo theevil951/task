@@ -1,3 +1,4 @@
+
 function inputData(json) {
 
     $.getJSON("employees.json", function (json) {
@@ -14,21 +15,15 @@ function inputData(json) {
         //console.log(json.employees.employee.length)
 
         emps = JSON.parse(localStorage.getItem("employees"));
-        console.log(emps);
+        // console.log(emps);
 
         newEmployee = { id: inputID, firstname: inputFN, lastname: inputLN, phone: inputPN }
 
-
-
         //length = json.employees.employee.length;
 
-        console.log(json.employees.employee[length])
+       // console.log(json.employees.employee[length])
 
-        console.log(emps)
-
-
-        
-
+       // console.log(emps)
 
         emps.employees.employee[length] = newEmployee;
 

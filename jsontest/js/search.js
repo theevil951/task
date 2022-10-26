@@ -4,7 +4,6 @@ function searchJSON(json) {
         var table = ""
 
 
-
         emps = JSON.parse(localStorage.getItem("employees"));
         // console.log(emps.employees.employee.length);
         length = emps.employees.employee.length;
@@ -22,7 +21,7 @@ function searchJSON(json) {
                 emps.employees.employee[i].lastname +
                 emps.employees.employee[i].phone
             search = search.toLowerCase();
-            
+
             if (search.includes(input.toLowerCase())) {
                 table += "<tr><td>" +
                     emps.employees.employee[i].id + "</td><td>" +
