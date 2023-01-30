@@ -1,0 +1,35 @@
+.gridsterbox{
+    display: flex;
+    height: 23.2vw;
+}
+
+.control-label.labelEdit {
+    display: inline-block;
+    margin: 11px 0px 0px 8px;
+    width: auto !important;
+}
+
+.btnEdit {
+    margin: 1px 2px 4px 0px;
+    padding: 2px !important;
+    font-size: 13px !important;
+}
+
+gridster-item {
+    overflow: visible !important;
+}
+gridster-item.multiselect {
+    z-index: 1000;
+}
+.dropdown-list {
+    overflow: visible !important;
+    
+}
+
+gridster.scrollVertical {
+    overflow: visible !important;
+}
+
+.modern-layout .form-group ul.input-group {
+    z-index: 0;
+}
